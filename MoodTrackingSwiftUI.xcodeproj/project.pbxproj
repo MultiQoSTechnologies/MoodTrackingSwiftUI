@@ -8,17 +8,79 @@
 
 /* Begin PBXBuildFile section */
 		244AAE852C0D8AA000D14DC8 /* MoodTrackingSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244AAE842C0D8AA000D14DC8 /* MoodTrackingSwiftUIApp.swift */; };
-		244AAE872C0D8AA000D14DC8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244AAE862C0D8AA000D14DC8 /* ContentView.swift */; };
+		244AAE872C0D8AA000D14DC8 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244AAE862C0D8AA000D14DC8 /* HomeView.swift */; };
 		244AAE892C0D8AA100D14DC8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 244AAE882C0D8AA100D14DC8 /* Assets.xcassets */; };
 		244AAE8C2C0D8AA100D14DC8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 244AAE8B2C0D8AA100D14DC8 /* Preview Assets.xcassets */; };
+		244AAE962C0D8D6D00D14DC8 /* GradientBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244AAE952C0D8D6D00D14DC8 /* GradientBackground.swift */; };
+		244AAEB72C0D908200D14DC8 /* Array+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244AAE992C0D908200D14DC8 /* Array+Extension.swift */; };
+		244AAEB82C0D908200D14DC8 /* Extension+Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244AAE9A2C0D908200D14DC8 /* Extension+Stack.swift */; };
+		244AAEB92C0D908200D14DC8 /* Collection+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244AAE9C2C0D908200D14DC8 /* Collection+Extension.swift */; };
+		244AAEBA2C0D908200D14DC8 /* Data+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244AAE9E2C0D908200D14DC8 /* Data+Extension.swift */; };
+		244AAEBD2C0D908200D14DC8 /* Dictionary+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244AAEA32C0D908200D14DC8 /* Dictionary+Extension.swift */; };
+		244AAEBE2C0D908200D14DC8 /* ExtensionDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244AAEA42C0D908200D14DC8 /* ExtensionDictionary.swift */; };
+		244AAEBF2C0D908200D14DC8 /* ExetensionDouble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244AAEA62C0D908200D14DC8 /* ExetensionDouble.swift */; };
+		244AAEC02C0D908200D14DC8 /* Encodable+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244AAEA82C0D908200D14DC8 /* Encodable+Extension.swift */; };
+		244AAEC12C0D908200D14DC8 /* ExetensionFloat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244AAEAA2C0D908200D14DC8 /* ExetensionFloat.swift */; };
+		244AAEC22C0D908200D14DC8 /* ExtensionInt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244AAEAC2C0D908200D14DC8 /* ExtensionInt.swift */; };
+		244AAEC32C0D908200D14DC8 /* ConvertToNumeric.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244AAEAE2C0D908200D14DC8 /* ConvertToNumeric.swift */; };
+		244AAEC42C0D908200D14DC8 /* Optional+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244AAEB02C0D908200D14DC8 /* Optional+Extension.swift */; };
+		244AAEC52C0D908200D14DC8 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244AAEB22C0D908200D14DC8 /* String+Extension.swift */; };
+		244AAEC62C0D908200D14DC8 /* URL+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244AAEB42C0D908200D14DC8 /* URL+Extension.swift */; };
+		244AAEC92C0D90CC00D14DC8 /* Device+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244AAEC72C0D90CC00D14DC8 /* Device+Extension.swift */; };
+		244AAECD2C0D940000D14DC8 /* HomeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244AAECC2C0D940000D14DC8 /* HomeHeaderView.swift */; };
+		244AAECF2C0D9B7100D14DC8 /* DateSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244AAECE2C0D9B7100D14DC8 /* DateSelectionView.swift */; };
+		244AAED12C0DA15A00D14DC8 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244AAED02C0DA15A00D14DC8 /* ChatView.swift */; };
+		244AAED52C0DC9A400D14DC8 /* MoodDetailCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244AAED42C0DC9A400D14DC8 /* MoodDetailCardView.swift */; };
+		244AAED92C0DCAB000D14DC8 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244AAED62C0DCAAF00D14DC8 /* Date+Extension.swift */; };
+		244AAEDA2C0DCAB000D14DC8 /* ExtensionDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244AAED72C0DCAAF00D14DC8 /* ExtensionDateFormatter.swift */; };
+		244AAEDC2C0DCC7700D14DC8 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244AAEDB2C0DCC7700D14DC8 /* HomeViewModel.swift */; };
+		244AAEE02C0DD0FD00D14DC8 /* EmotionSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244AAEDF2C0DD0FD00D14DC8 /* EmotionSelectionView.swift */; };
+		244AAEE32C0DDD3100D14DC8 /* QAHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244AAEE22C0DDD3100D14DC8 /* QAHeaderView.swift */; };
+		244AAEE52C0DEB9200D14DC8 /* EmotionsGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244AAEE42C0DEB9200D14DC8 /* EmotionsGridView.swift */; };
+		244AAEE72C0DF00900D14DC8 /* WhatMadeFeelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244AAEE62C0DF00900D14DC8 /* WhatMadeFeelView.swift */; };
+		244AAEE92C0DF32B00D14DC8 /* AppButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244AAEE82C0DF32B00D14DC8 /* AppButton.swift */; };
+		244AAEEB2C0DF51800D14DC8 /* QATitltSubtitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244AAEEA2C0DF51800D14DC8 /* QATitltSubtitle.swift */; };
+		244AAEED2C0DF74300D14DC8 /* AppSearchField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244AAEEC2C0DF74300D14DC8 /* AppSearchField.swift */; };
+		244AAEF02C0DFC9000D14DC8 /* CongratulationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244AAEEF2C0DFC9000D14DC8 /* CongratulationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		244AAE812C0D8AA000D14DC8 /* MoodTrackingSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoodTrackingSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		244AAE842C0D8AA000D14DC8 /* MoodTrackingSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodTrackingSwiftUIApp.swift; sourceTree = "<group>"; };
-		244AAE862C0D8AA000D14DC8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		244AAE862C0D8AA000D14DC8 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		244AAE882C0D8AA100D14DC8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		244AAE8B2C0D8AA100D14DC8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		244AAE952C0D8D6D00D14DC8 /* GradientBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientBackground.swift; sourceTree = "<group>"; };
+		244AAE992C0D908200D14DC8 /* Array+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Extension.swift"; sourceTree = "<group>"; };
+		244AAE9A2C0D908200D14DC8 /* Extension+Stack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extension+Stack.swift"; sourceTree = "<group>"; };
+		244AAE9C2C0D908200D14DC8 /* Collection+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Collection+Extension.swift"; sourceTree = "<group>"; };
+		244AAE9E2C0D908200D14DC8 /* Data+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data+Extension.swift"; sourceTree = "<group>"; };
+		244AAEA32C0D908200D14DC8 /* Dictionary+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dictionary+Extension.swift"; sourceTree = "<group>"; };
+		244AAEA42C0D908200D14DC8 /* ExtensionDictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionDictionary.swift; sourceTree = "<group>"; };
+		244AAEA62C0D908200D14DC8 /* ExetensionDouble.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExetensionDouble.swift; sourceTree = "<group>"; };
+		244AAEA82C0D908200D14DC8 /* Encodable+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Encodable+Extension.swift"; sourceTree = "<group>"; };
+		244AAEAA2C0D908200D14DC8 /* ExetensionFloat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExetensionFloat.swift; sourceTree = "<group>"; };
+		244AAEAC2C0D908200D14DC8 /* ExtensionInt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionInt.swift; sourceTree = "<group>"; };
+		244AAEAE2C0D908200D14DC8 /* ConvertToNumeric.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConvertToNumeric.swift; sourceTree = "<group>"; };
+		244AAEB02C0D908200D14DC8 /* Optional+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Optional+Extension.swift"; sourceTree = "<group>"; };
+		244AAEB22C0D908200D14DC8 /* String+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		244AAEB42C0D908200D14DC8 /* URL+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URL+Extension.swift"; sourceTree = "<group>"; };
+		244AAEC72C0D90CC00D14DC8 /* Device+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Device+Extension.swift"; sourceTree = "<group>"; };
+		244AAECC2C0D940000D14DC8 /* HomeHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHeaderView.swift; sourceTree = "<group>"; };
+		244AAECE2C0D9B7100D14DC8 /* DateSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateSelectionView.swift; sourceTree = "<group>"; };
+		244AAED02C0DA15A00D14DC8 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		244AAED42C0DC9A400D14DC8 /* MoodDetailCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodDetailCardView.swift; sourceTree = "<group>"; };
+		244AAED62C0DCAAF00D14DC8 /* Date+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
+		244AAED72C0DCAAF00D14DC8 /* ExtensionDateFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionDateFormatter.swift; sourceTree = "<group>"; };
+		244AAEDB2C0DCC7700D14DC8 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		244AAEDF2C0DD0FD00D14DC8 /* EmotionSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmotionSelectionView.swift; sourceTree = "<group>"; };
+		244AAEE22C0DDD3100D14DC8 /* QAHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QAHeaderView.swift; sourceTree = "<group>"; };
+		244AAEE42C0DEB9200D14DC8 /* EmotionsGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmotionsGridView.swift; sourceTree = "<group>"; };
+		244AAEE62C0DF00900D14DC8 /* WhatMadeFeelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatMadeFeelView.swift; sourceTree = "<group>"; };
+		244AAEE82C0DF32B00D14DC8 /* AppButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppButton.swift; sourceTree = "<group>"; };
+		244AAEEA2C0DF51800D14DC8 /* QATitltSubtitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QATitltSubtitle.swift; sourceTree = "<group>"; };
+		244AAEEC2C0DF74300D14DC8 /* AppSearchField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSearchField.swift; sourceTree = "<group>"; };
+		244AAEEF2C0DFC9000D14DC8 /* CongratulationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CongratulationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +114,10 @@
 			isa = PBXGroup;
 			children = (
 				244AAE842C0D8AA000D14DC8 /* MoodTrackingSwiftUIApp.swift */,
-				244AAE862C0D8AA000D14DC8 /* ContentView.swift */,
+				244AAE972C0D906200D14DC8 /* Master */,
+				244AAE932C0D8D4800D14DC8 /* Components */,
+				244AAEDD2C0DCC8300D14DC8 /* ViewModel */,
+				244AAE922C0D8D2000D14DC8 /* View */,
 				244AAE882C0D8AA100D14DC8 /* Assets.xcassets */,
 				244AAE8A2C0D8AA100D14DC8 /* Preview Content */,
 			);
@@ -65,6 +130,242 @@
 				244AAE8B2C0D8AA100D14DC8 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		244AAE922C0D8D2000D14DC8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				244AAEEE2C0DFC6500D14DC8 /* Congratulation */,
+				244AAEDE2C0DD08B00D14DC8 /* EmotionQA */,
+				244AAECA2C0D93DE00D14DC8 /* Home */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		244AAE932C0D8D4800D14DC8 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				244AAE942C0D8D5B00D14DC8 /* ViewModifiers */,
+				244AAEE82C0DF32B00D14DC8 /* AppButton.swift */,
+				244AAEEC2C0DF74300D14DC8 /* AppSearchField.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		244AAE942C0D8D5B00D14DC8 /* ViewModifiers */ = {
+			isa = PBXGroup;
+			children = (
+				244AAE952C0D8D6D00D14DC8 /* GradientBackground.swift */,
+			);
+			path = ViewModifiers;
+			sourceTree = "<group>";
+		};
+		244AAE972C0D906200D14DC8 /* Master */ = {
+			isa = PBXGroup;
+			children = (
+				244AAE982C0D907200D14DC8 /* Extension */,
+			);
+			path = Master;
+			sourceTree = "<group>";
+		};
+		244AAE982C0D907200D14DC8 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				244AAED82C0DCAAF00D14DC8 /* Date */,
+				244AAEC82C0D90CC00D14DC8 /* UIDevice */,
+				244AAEB62C0D908200D14DC8 /* Foundation */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		244AAE9B2C0D908200D14DC8 /* Array */ = {
+			isa = PBXGroup;
+			children = (
+				244AAE992C0D908200D14DC8 /* Array+Extension.swift */,
+				244AAE9A2C0D908200D14DC8 /* Extension+Stack.swift */,
+			);
+			path = Array;
+			sourceTree = "<group>";
+		};
+		244AAE9D2C0D908200D14DC8 /* Collection */ = {
+			isa = PBXGroup;
+			children = (
+				244AAE9C2C0D908200D14DC8 /* Collection+Extension.swift */,
+			);
+			path = Collection;
+			sourceTree = "<group>";
+		};
+		244AAE9F2C0D908200D14DC8 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				244AAE9E2C0D908200D14DC8 /* Data+Extension.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		244AAEA52C0D908200D14DC8 /* Dictionary */ = {
+			isa = PBXGroup;
+			children = (
+				244AAEA32C0D908200D14DC8 /* Dictionary+Extension.swift */,
+				244AAEA42C0D908200D14DC8 /* ExtensionDictionary.swift */,
+			);
+			path = Dictionary;
+			sourceTree = "<group>";
+		};
+		244AAEA72C0D908200D14DC8 /* Double */ = {
+			isa = PBXGroup;
+			children = (
+				244AAEA62C0D908200D14DC8 /* ExetensionDouble.swift */,
+			);
+			path = Double;
+			sourceTree = "<group>";
+		};
+		244AAEA92C0D908200D14DC8 /* Encodable */ = {
+			isa = PBXGroup;
+			children = (
+				244AAEA82C0D908200D14DC8 /* Encodable+Extension.swift */,
+			);
+			path = Encodable;
+			sourceTree = "<group>";
+		};
+		244AAEAB2C0D908200D14DC8 /* Float */ = {
+			isa = PBXGroup;
+			children = (
+				244AAEAA2C0D908200D14DC8 /* ExetensionFloat.swift */,
+			);
+			path = Float;
+			sourceTree = "<group>";
+		};
+		244AAEAD2C0D908200D14DC8 /* Int */ = {
+			isa = PBXGroup;
+			children = (
+				244AAEAC2C0D908200D14DC8 /* ExtensionInt.swift */,
+			);
+			path = Int;
+			sourceTree = "<group>";
+		};
+		244AAEAF2C0D908200D14DC8 /* Number */ = {
+			isa = PBXGroup;
+			children = (
+				244AAEAE2C0D908200D14DC8 /* ConvertToNumeric.swift */,
+			);
+			path = Number;
+			sourceTree = "<group>";
+		};
+		244AAEB12C0D908200D14DC8 /* Optional */ = {
+			isa = PBXGroup;
+			children = (
+				244AAEB02C0D908200D14DC8 /* Optional+Extension.swift */,
+			);
+			path = Optional;
+			sourceTree = "<group>";
+		};
+		244AAEB32C0D908200D14DC8 /* String */ = {
+			isa = PBXGroup;
+			children = (
+				244AAEB22C0D908200D14DC8 /* String+Extension.swift */,
+			);
+			path = String;
+			sourceTree = "<group>";
+		};
+		244AAEB52C0D908200D14DC8 /* URL */ = {
+			isa = PBXGroup;
+			children = (
+				244AAEB42C0D908200D14DC8 /* URL+Extension.swift */,
+			);
+			path = URL;
+			sourceTree = "<group>";
+		};
+		244AAEB62C0D908200D14DC8 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				244AAE9B2C0D908200D14DC8 /* Array */,
+				244AAE9D2C0D908200D14DC8 /* Collection */,
+				244AAE9F2C0D908200D14DC8 /* Data */,
+				244AAEA52C0D908200D14DC8 /* Dictionary */,
+				244AAEA72C0D908200D14DC8 /* Double */,
+				244AAEA92C0D908200D14DC8 /* Encodable */,
+				244AAEAB2C0D908200D14DC8 /* Float */,
+				244AAEAD2C0D908200D14DC8 /* Int */,
+				244AAEAF2C0D908200D14DC8 /* Number */,
+				244AAEB12C0D908200D14DC8 /* Optional */,
+				244AAEB32C0D908200D14DC8 /* String */,
+				244AAEB52C0D908200D14DC8 /* URL */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		244AAEC82C0D90CC00D14DC8 /* UIDevice */ = {
+			isa = PBXGroup;
+			children = (
+				244AAEC72C0D90CC00D14DC8 /* Device+Extension.swift */,
+			);
+			path = UIDevice;
+			sourceTree = "<group>";
+		};
+		244AAECA2C0D93DE00D14DC8 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				244AAECB2C0D93EC00D14DC8 /* Components */,
+				244AAE862C0D8AA000D14DC8 /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		244AAECB2C0D93EC00D14DC8 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				244AAECC2C0D940000D14DC8 /* HomeHeaderView.swift */,
+				244AAECE2C0D9B7100D14DC8 /* DateSelectionView.swift */,
+				244AAED02C0DA15A00D14DC8 /* ChatView.swift */,
+				244AAED42C0DC9A400D14DC8 /* MoodDetailCardView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		244AAED82C0DCAAF00D14DC8 /* Date */ = {
+			isa = PBXGroup;
+			children = (
+				244AAED62C0DCAAF00D14DC8 /* Date+Extension.swift */,
+				244AAED72C0DCAAF00D14DC8 /* ExtensionDateFormatter.swift */,
+			);
+			path = Date;
+			sourceTree = "<group>";
+		};
+		244AAEDD2C0DCC8300D14DC8 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				244AAEDB2C0DCC7700D14DC8 /* HomeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		244AAEDE2C0DD08B00D14DC8 /* EmotionQA */ = {
+			isa = PBXGroup;
+			children = (
+				244AAEE12C0DDD2100D14DC8 /* Components */,
+				244AAEDF2C0DD0FD00D14DC8 /* EmotionSelectionView.swift */,
+				244AAEE62C0DF00900D14DC8 /* WhatMadeFeelView.swift */,
+				244AAEEA2C0DF51800D14DC8 /* QATitltSubtitle.swift */,
+			);
+			path = EmotionQA;
+			sourceTree = "<group>";
+		};
+		244AAEE12C0DDD2100D14DC8 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				244AAEE22C0DDD3100D14DC8 /* QAHeaderView.swift */,
+				244AAEE42C0DEB9200D14DC8 /* EmotionsGridView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		244AAEEE2C0DFC6500D14DC8 /* Congratulation */ = {
+			isa = PBXGroup;
+			children = (
+				244AAEEF2C0DFC9000D14DC8 /* CongratulationView.swift */,
+			);
+			path = Congratulation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +438,39 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				244AAE872C0D8AA000D14DC8 /* ContentView.swift in Sources */,
+				244AAEB82C0D908200D14DC8 /* Extension+Stack.swift in Sources */,
+				244AAEBA2C0D908200D14DC8 /* Data+Extension.swift in Sources */,
+				244AAEC42C0D908200D14DC8 /* Optional+Extension.swift in Sources */,
+				244AAEDC2C0DCC7700D14DC8 /* HomeViewModel.swift in Sources */,
+				244AAEF02C0DFC9000D14DC8 /* CongratulationView.swift in Sources */,
+				244AAEB92C0D908200D14DC8 /* Collection+Extension.swift in Sources */,
+				244AAED12C0DA15A00D14DC8 /* ChatView.swift in Sources */,
+				244AAEBE2C0D908200D14DC8 /* ExtensionDictionary.swift in Sources */,
+				244AAEDA2C0DCAB000D14DC8 /* ExtensionDateFormatter.swift in Sources */,
+				244AAED92C0DCAB000D14DC8 /* Date+Extension.swift in Sources */,
+				244AAEE92C0DF32B00D14DC8 /* AppButton.swift in Sources */,
+				244AAEED2C0DF74300D14DC8 /* AppSearchField.swift in Sources */,
+				244AAEC02C0D908200D14DC8 /* Encodable+Extension.swift in Sources */,
+				244AAE872C0D8AA000D14DC8 /* HomeView.swift in Sources */,
+				244AAEC92C0D90CC00D14DC8 /* Device+Extension.swift in Sources */,
+				244AAEE72C0DF00900D14DC8 /* WhatMadeFeelView.swift in Sources */,
+				244AAEBF2C0D908200D14DC8 /* ExetensionDouble.swift in Sources */,
+				244AAEC32C0D908200D14DC8 /* ConvertToNumeric.swift in Sources */,
+				244AAEC52C0D908200D14DC8 /* String+Extension.swift in Sources */,
+				244AAEC62C0D908200D14DC8 /* URL+Extension.swift in Sources */,
+				244AAEC22C0D908200D14DC8 /* ExtensionInt.swift in Sources */,
+				244AAECF2C0D9B7100D14DC8 /* DateSelectionView.swift in Sources */,
 				244AAE852C0D8AA000D14DC8 /* MoodTrackingSwiftUIApp.swift in Sources */,
+				244AAEE52C0DEB9200D14DC8 /* EmotionsGridView.swift in Sources */,
+				244AAEE02C0DD0FD00D14DC8 /* EmotionSelectionView.swift in Sources */,
+				244AAE962C0D8D6D00D14DC8 /* GradientBackground.swift in Sources */,
+				244AAEB72C0D908200D14DC8 /* Array+Extension.swift in Sources */,
+				244AAED52C0DC9A400D14DC8 /* MoodDetailCardView.swift in Sources */,
+				244AAEEB2C0DF51800D14DC8 /* QATitltSubtitle.swift in Sources */,
+				244AAEE32C0DDD3100D14DC8 /* QAHeaderView.swift in Sources */,
+				244AAEC12C0D908200D14DC8 /* ExetensionFloat.swift in Sources */,
+				244AAECD2C0D940000D14DC8 /* HomeHeaderView.swift in Sources */,
+				244AAEBD2C0D908200D14DC8 /* Dictionary+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +612,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -309,6 +642,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

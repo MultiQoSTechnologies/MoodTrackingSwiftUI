@@ -9,9 +9,15 @@ import SwiftUI
 
 @main
 struct MoodTrackingSwiftUIApp: App {
+    
+    @StateObject var homeVM = HomeViewModel()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationStack {
+                HomeView()
+                    .environmentObject(homeVM)
+            }
         }
     }
 }
