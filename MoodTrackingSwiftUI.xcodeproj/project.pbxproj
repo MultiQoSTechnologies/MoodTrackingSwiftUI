@@ -47,6 +47,7 @@
 		247A385F2C11C11200EC7F9C /* MDLEmotionDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247A385E2C11C11200EC7F9C /* MDLEmotionDetail.swift */; };
 		247A38642C11CDDD00EC7F9C /* ToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247A38632C11CDDD00EC7F9C /* ToastView.swift */; };
 		247A38662C11CF4500EC7F9C /* ToastModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247A38652C11CF4500EC7F9C /* ToastModifier.swift */; };
+		247A386A2C11E48300EC7F9C /* FlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247A38692C11E48300EC7F9C /* FlowLayout.swift */; };
 		248665072C1022C90035A1B2 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248665062C1022C90035A1B2 /* LoginView.swift */; };
 		2486653E2C1026AC0035A1B2 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 2486653D2C1026AC0035A1B2 /* FirebaseAnalytics */; };
 		248665402C1026AC0035A1B2 /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 2486653F2C1026AC0035A1B2 /* FirebaseAnalyticsSwift */; };
@@ -116,6 +117,7 @@
 		247A385E2C11C11200EC7F9C /* MDLEmotionDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MDLEmotionDetail.swift; sourceTree = "<group>"; };
 		247A38632C11CDDD00EC7F9C /* ToastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastView.swift; sourceTree = "<group>"; };
 		247A38652C11CF4500EC7F9C /* ToastModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastModifier.swift; sourceTree = "<group>"; };
+		247A38692C11E48300EC7F9C /* FlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowLayout.swift; sourceTree = "<group>"; };
 		248665062C1022C90035A1B2 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		248665492C1030000035A1B2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		2486654B2C1030300035A1B2 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
@@ -211,10 +213,11 @@
 		244AAE932C0D8D4800D14DC8 /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				247A38602C11CDA700EC7F9C /* Toast */,
 				24E680612C0ED17700EF885A /* BackgroundBlurView.swift */,
 				244AAE952C0D8D6D00D14DC8 /* GradientBackground.swift */,
 				244AAEF12C0E043700D14DC8 /* CommonView */,
+				247A38602C11CDA700EC7F9C /* Toast */,
+				247A38692C11E48300EC7F9C /* FlowLayout.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -651,6 +654,7 @@
 				244AAED52C0DC9A400D14DC8 /* MoodDetailCardView.swift in Sources */,
 				244AAEEB2C0DF51800D14DC8 /* QATitltSubtitle.swift in Sources */,
 				24E680642C0EE21900EF885A /* ThingYouWantAddView.swift in Sources */,
+				247A386A2C11E48300EC7F9C /* FlowLayout.swift in Sources */,
 				244AAEE32C0DDD3100D14DC8 /* QAHeaderView.swift in Sources */,
 				244AAEC12C0D908200D14DC8 /* ExetensionFloat.swift in Sources */,
 				244AAECD2C0D940000D14DC8 /* HomeHeaderView.swift in Sources */,

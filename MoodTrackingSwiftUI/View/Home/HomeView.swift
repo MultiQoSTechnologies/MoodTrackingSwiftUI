@@ -33,13 +33,12 @@ struct HomeView: View {
                         MoodDetailCardView(expanded: $expanded)
                     }
                 }
-                
                 Spacer()
+                
             }.padding(.horizontal, 20.aspectRatio)
             
             Button {
-                showAlert = true
-//                router.navigate(to: .emotionSelection)
+                router.navigate(to: .emotionSelection)
             } label: {
                 VStack {
                     Image(systemName: "plus")
@@ -61,8 +60,8 @@ struct HomeView: View {
             }
             
             Button {
-                UserDefaults.standard.set(nil, forKey: "User")
                 Constant.user = nil
+                try? UserDefaults.standard.set(object: Constant.user, forKey: "User")
                 router.navigateToRoot()
             } label: {
                 Text("Logout")

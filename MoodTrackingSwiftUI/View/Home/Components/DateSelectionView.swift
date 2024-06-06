@@ -8,9 +8,7 @@
 import SwiftUI
 
 struct DateSelectionView: View {
-    @EnvironmentObject var homeVM: HomeViewModel
-    
-    @State var selectedDate: Date?
+    @EnvironmentObject var homeVM: HomeViewModel 
     
     var body: some View {
         ScrollView(.horizontal, showsIndicators: false) {
@@ -18,11 +16,11 @@ struct DateSelectionView: View {
                 ForEach(homeVM.dates, id: \.self) { date in
                     VStack {
                         Capsule()
-                            .fill(selectedDate == date ? .appPurple : .white)
-                            .frame(width: 49.aspectRatio, height: 65.aspectRatio)
-                            .overlay { 
+                            .fill(homeVM.selectedDate == date ? .appPurple : .white)
+                            .frame(width: 48.aspectRatio, height: 65.aspectRatio)
+                            .overlay {
                                 Text(date.toDate(format: "E dd"))
-                                    .foregroundStyle(selectedDate == date ? .white : .black)
+                                    .foregroundStyle(homeVM.selectedDate == date ? .white : .black)
                                     .font(.subheadline)
                                     .multilineTextAlignment(.center)
                                     .padding(.horizontal, 8.aspectRatio)
@@ -32,14 +30,14 @@ struct DateSelectionView: View {
                             .frame(width: 24.aspectRatio, height: 24.aspectRatio)
                     }
                     .onTapGesture {
-                        withAnimation(.easeInOut(duration: 0.5)) {
-                            selectedDate = date
+                        withAnimation(.easeInOut(duration: 0.7)) {
+                            homeVM.selectedDate = date
                         }
                     }
                 }
             }
             .onAppear(perform: {
-                selectedDate = homeVM.dates.first
+                homeVM.selectedDate = homeVM.dates.last
             })
         }
     }
@@ -47,4 +45,5 @@ struct DateSelectionView: View {
 
 #Preview {
     DateSelectionView()
+        .environmentObject(HomeViewModel())
 }

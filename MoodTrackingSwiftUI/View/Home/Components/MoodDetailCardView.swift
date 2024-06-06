@@ -101,7 +101,7 @@ struct MoodDetailCardView: View {
         .padding(.top, 15.aspectRatio)
         .onAppear(perform: {
             Task {
-//                await homeVM.getEmotionDetailsData()
+                await homeVM.getEmotionDetailsData()
             }
         })
     }

@@ -19,19 +19,16 @@ struct WhatMadeFeelView: View {
         ZStack {
             VStack {
                 QAHeaderView(title: "2/3")
-            
-                ScrollView {
-                    QATitltSubtitle(title: "What reason making you feel this way?", subtitle: "Select reason which reflacted your emotions.")
-                    
-                    AppSearchField(searchText: $searchText, placeholder: "Search reason")
-                        .onChange(of: searchText, perform: { value in
-                            emotionqaVM.searchReason(searchText: value)
-                        })
-                    
-                    ReasonGridView()
-                        .padding(.top, 10.aspectRatio)
-                }
-                .scrollIndicators(.hidden)
+                
+                QATitltSubtitle(title: "What reason making you feel this way?", subtitle: "Select reason which reflacted your emotions.")
+                
+                AppSearchField(searchText: $searchText, placeholder: "Search reason")
+                    .onChange(of: searchText, perform: { value in
+                        emotionqaVM.searchReason(searchText: value)
+                    })
+                
+                ReasonGridView()
+                    .padding(.top, 10.aspectRatio)
                 
                 Spacer()
                 
