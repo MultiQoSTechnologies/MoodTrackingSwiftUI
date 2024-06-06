@@ -8,7 +8,11 @@
 import SwiftUI
 
 struct MoodDetailCardView: View {
+    
+    @EnvironmentObject var homeVM: HomeViewModel
+ 
     @Binding var expanded: Bool
+    
     var body: some View {
         VStack(alignment: .leading, spacing: 12.aspectRatio) {
             HStack {
@@ -30,17 +34,11 @@ struct MoodDetailCardView: View {
                 
                 Spacer()
                 
-                HStack {
-                    Button(action: {}, label: {
-                        Text("Edit")
-                            .foregroundStyle(.appPurple)
-                    })
-                    
+                HStack {  
                     Button(action: {}, label: {
                         Text("Delete")
                             .foregroundStyle(.appRed)
                     })
-                    
                 }
             }
             
@@ -64,15 +62,13 @@ struct MoodDetailCardView: View {
                 Text("The day didn’t go well in morning. I tried to make coffee, but it burned out. I missed my bus. The day didn’t go well in morning. I tried to make coffee, but it burned out. I missed my bus,The day didn’t go well in morning. I tried to make coffee, but it burned out. I missed my bus")
             }.lineLimit(expanded ? nil : 2)
             
-            Button(action: {
-                
-                withAnimation(.linear) {
-                    expanded.toggle()
+            Text(expanded ? "- Read less" : "+ Read more")
+                .foregroundStyle(.appPurple)
+                .onTapGesture {
+                    withAnimation {
+                        expanded.toggle()
+                    }
                 }
-            }, label: {
-                Text(expanded ? "- Read less" : "+ Read more")
-                    .foregroundStyle(.appPurple)
-            })
             
             Divider()
                 .frame(height: 1)
@@ -103,6 +99,11 @@ struct MoodDetailCardView: View {
         .background(.white)
         .clipShape(.rect(cornerRadius: 15.aspectRatio))
         .padding(.top, 15.aspectRatio)
+        .onAppear(perform: {
+            Task {
+//                await homeVM.getEmotionDetailsData()
+            }
+        })
     }
 }
 

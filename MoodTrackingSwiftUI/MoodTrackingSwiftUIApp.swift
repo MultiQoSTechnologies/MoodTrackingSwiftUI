@@ -6,18 +6,23 @@
 //
 
 import SwiftUI
+import Firebase
+import GoogleSignIn
+import SDWebImageSwiftUI
 
 @main
 struct MoodTrackingSwiftUIApp: App {
     
-    @StateObject var homeVM = HomeViewModel()
+    init() { 
+        FirebaseApp.configure()
+    }
     
     var body: some Scene {
         WindowGroup {
-            NavigationStack {
-                HomeView()
-                    .environmentObject(homeVM)
-            }
+            AppNavigationView()
+                .onOpenURL { url in
+                    GIDSignIn.sharedInstance.handle(url)
+                }
         }
     }
 }

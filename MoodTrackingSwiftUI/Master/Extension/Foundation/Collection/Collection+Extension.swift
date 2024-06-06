@@ -34,3 +34,11 @@ extension Collection {
         }
     }
 }
+
+
+extension Dictionary {
+   func castToObject<T: Decodable>() -> T? {
+       let json = try? JSONSerialization.data(withJSONObject: self)
+       return json == nil ? nil : try? JSONDecoder().decode(T.self, from: json!)
+   }
+}

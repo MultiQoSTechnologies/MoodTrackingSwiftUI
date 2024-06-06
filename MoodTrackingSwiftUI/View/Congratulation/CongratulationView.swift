@@ -8,13 +8,19 @@
 import SwiftUI
 
 struct CongratulationView: View {
+     
+    @EnvironmentObject private var router: Router
+    @State private var showHome = false
+    
     var body: some View {
         ZStack {
             Color.black.opacity(0.3).ignoresSafeArea()
+            
             VStack(spacing: 16.aspectRatio) {
                 Image(.congratulationEmoji)
                     .resizable()
                     .frame(width: 200.aspectRatio, height: 220.aspectRatio)
+                
                 HStack {
                     Text("You are on a ")
                         
@@ -36,15 +42,21 @@ struct CongratulationView: View {
                     .multilineTextAlignment(.center)
                     .padding(.bottom, 30.aspectRatio)
                 
-                AppButton(onTap: {
-                    
-                }, title: "Got it")
+                AppButton(
+                    onTap: {
+                        router.navigateToRoot() 
+                    },
+                    title: "Got it",
+                    enable: true
+                )
             }
             .padding(16.aspectRatio)
             .background(.white)
             .clipShape(.rect(cornerRadius: 30.aspectRatio))
             .padding(16.aspectRatio)
-        }
+        } 
+        .gradientBackground()
+        .navigationBarBackButtonHidden()
     }
 }
 

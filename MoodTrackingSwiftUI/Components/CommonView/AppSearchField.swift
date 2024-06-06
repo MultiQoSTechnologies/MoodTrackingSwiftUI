@@ -9,7 +9,7 @@ import SwiftUI
 
 struct AppSearchField: View {
     
-    @State var searchText: String = ""
+    @Binding var searchText: String
     @State var placeholder: String = "Search"
     
     var body: some View {
@@ -29,5 +29,5 @@ struct AppSearchField: View {
 }
 
 #Preview {
-    AppSearchField()
+    AppSearchField(searchText: .constant("Search"))
 }

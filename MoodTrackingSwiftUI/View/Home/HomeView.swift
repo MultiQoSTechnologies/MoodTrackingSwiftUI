@@ -9,10 +9,14 @@ import SwiftUI
 import Charts 
 
 struct HomeView: View {
-    @EnvironmentObject var homeVM: HomeViewModel
     
+    @EnvironmentObject private var homeVM: HomeViewModel
+    @EnvironmentObject private var router: Router
+ 
     @State private var expanded = false
     @State private var showQA = false 
+    
+    @State var showAlert = false
     
     var body: some View {
         ZStack(alignment: .bottomTrailing) {
@@ -24,17 +28,18 @@ struct HomeView: View {
                         DateSelectionView()
                         ChartView()
                             .padding(.top, 30.aspectRatio)
-                            .animation(nil, value: expanded)
+                            .animation(nil)
                         
                         MoodDetailCardView(expanded: $expanded)
                     }
-                
                 }
+                
                 Spacer()
             }.padding(.horizontal, 20.aspectRatio)
             
             Button {
-                showQA = true
+                showAlert = true
+//                router.navigate(to: .emotionSelection)
             } label: {
                 VStack {
                     Image(systemName: "plus")
@@ -44,11 +49,27 @@ struct HomeView: View {
                         .clipShape(.rect(cornerRadius: 15.aspectRatio))
                 }
             }.padding()
-        }
+        } 
         .gradientBackground()
-        .sheet(isPresented: $showQA, content: {
-            EmotionSelectionView()
-        })
+        .navigationBarBackButtonHidden()
+        .loader(loading: homeVM.isLoading)
+        .toast(toast: $homeVM.toast)
+        .alert("Logout", isPresented: $showAlert) {
+            Button {
+            } label: {
+                Text("Cancel")
+            }
+            
+            Button {
+                UserDefaults.standard.set(nil, forKey: "User")
+                Constant.user = nil
+                router.navigateToRoot()
+            } label: {
+                Text("Logout")
+            }
+        } message: {
+            Text("Are you sure want to logout?")
+        }
     }
 }
 

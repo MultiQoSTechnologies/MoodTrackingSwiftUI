@@ -9,10 +9,12 @@ import SwiftUI
 
 struct WhatMadeFeelView: View {
     
-    @State var searchText = ""
+    @EnvironmentObject private var router: Router
+    @EnvironmentObject private var emotionqaVM: EmotionQAViewModel
     
-    let columns: [GridItem] = Array(repeating: .init(.flexible()), count: 1)
-
+    @State private var searchText = ""
+    @State private var showThingWantToAdd = false
+    
     var body: some View {
         ZStack {
             VStack {
@@ -20,30 +22,39 @@ struct WhatMadeFeelView: View {
             
                 ScrollView {
                     QATitltSubtitle(title: "What reason making you feel this way?", subtitle: "Select reason which reflacted your emotions.")
-                    AppSearchField(searchText: searchText, placeholder: "Search reason")
                     
-                    LazyVGrid(columns: columns, content: {
-                        GeometryReader(content: { geometry in
-                            Text("Placeholder")
-                                .frame(width: geometry.size.width)
+                    AppSearchField(searchText: $searchText, placeholder: "Search reason")
+                        .onChange(of: searchText, perform: { value in
+                            emotionqaVM.searchReason(searchText: value)
                         })
-                            
-                    })
+                    
+                    ReasonGridView()
+                        .padding(.top, 10.aspectRatio)
                 }
+                .scrollIndicators(.hidden)
+                
                 Spacer()
                 
-                AppButton(onTap: {
-
-                }, title: "Continue")
-                
-                
+                AppButton(
+                    onTap: {
+                        if emotionqaVM.checkReasonContinueEnable() {
+                            router.navigate(to: .thingYouWantAdd)
+                        }
+                    },
+                    title: "Continue",
+                    enable: emotionqaVM.checkReasonContinueEnable()
+                )
             }
         }
         .padding(.horizontal, 20.aspectRatio)
         .gradientBackground(colors: [.lightGreen, .lightBlue, .lightPurple])
-    } 
+        .navigationBarBackButtonHidden()
+        .loader(loading: emotionqaVM.isLoading)
+        .toast(toast: $emotionqaVM.toast)
+    }
 }
 
 #Preview {
     WhatMadeFeelView()
-}
+        .environmentObject(EmotionQAViewModel())
+} 

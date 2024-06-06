@@ -42,6 +42,36 @@
 		244AAEEB2C0DF51800D14DC8 /* QATitltSubtitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244AAEEA2C0DF51800D14DC8 /* QATitltSubtitle.swift */; };
 		244AAEED2C0DF74300D14DC8 /* AppSearchField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244AAEEC2C0DF74300D14DC8 /* AppSearchField.swift */; };
 		244AAEF02C0DFC9000D14DC8 /* CongratulationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244AAEEF2C0DFC9000D14DC8 /* CongratulationView.swift */; };
+		247A385B2C118E6B00EC7F9C /* ReasonGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247A385A2C118E6B00EC7F9C /* ReasonGridView.swift */; };
+		247A385D2C118FE000EC7F9C /* MDLReason.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247A385C2C118FE000EC7F9C /* MDLReason.swift */; };
+		247A385F2C11C11200EC7F9C /* MDLEmotionDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247A385E2C11C11200EC7F9C /* MDLEmotionDetail.swift */; };
+		247A38642C11CDDD00EC7F9C /* ToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247A38632C11CDDD00EC7F9C /* ToastView.swift */; };
+		247A38662C11CF4500EC7F9C /* ToastModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247A38652C11CF4500EC7F9C /* ToastModifier.swift */; };
+		248665072C1022C90035A1B2 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248665062C1022C90035A1B2 /* LoginView.swift */; };
+		2486653E2C1026AC0035A1B2 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 2486653D2C1026AC0035A1B2 /* FirebaseAnalytics */; };
+		248665402C1026AC0035A1B2 /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 2486653F2C1026AC0035A1B2 /* FirebaseAnalyticsSwift */; };
+		248665422C1026AC0035A1B2 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 248665412C1026AC0035A1B2 /* FirebaseAuth */; };
+		248665442C1026AC0035A1B2 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 248665432C1026AC0035A1B2 /* FirebaseFirestore */; };
+		248665462C1026AC0035A1B2 /* FirebaseFirestoreCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 248665452C1026AC0035A1B2 /* FirebaseFirestoreCombine-Community */; };
+		248665482C1026AC0035A1B2 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 248665472C1026AC0035A1B2 /* FirebaseFirestoreSwift */; };
+		2486654A2C1030000035A1B2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 248665492C1030000035A1B2 /* GoogleService-Info.plist */; };
+		2486654C2C1030300035A1B2 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2486654B2C1030300035A1B2 /* LoginViewModel.swift */; };
+		2486654F2C1033830035A1B2 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 2486654E2C1033830035A1B2 /* GoogleSignIn */; };
+		248665512C1033830035A1B2 /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 248665502C1033830035A1B2 /* GoogleSignInSwift */; };
+		248665562C105E9D0035A1B2 /* MDLUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248665552C105E9D0035A1B2 /* MDLUser.swift */; };
+		248665592C10639A0035A1B2 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248665582C10639A0035A1B2 /* Constant.swift */; };
+		2486655B2C1064160035A1B2 /* UserDefaults+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2486655A2C1064160035A1B2 /* UserDefaults+Extension.swift */; };
+		248665612C10653E0035A1B2 /* AppPrint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248665602C10653E0035A1B2 /* AppPrint.swift */; };
+		248665642C107B800035A1B2 /* GoogleGenerativeAI in Frameworks */ = {isa = PBXBuildFile; productRef = 248665632C107B800035A1B2 /* GoogleGenerativeAI */; };
+		248665662C107BB80035A1B2 /* GeminiHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248665652C107BB80035A1B2 /* GeminiHelper.swift */; };
+		248665682C1093200035A1B2 /* MDLMood.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248665672C1093200035A1B2 /* MDLMood.swift */; };
+		2486656A2C1094090035A1B2 /* EmotionQAViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248665692C1094090035A1B2 /* EmotionQAViewModel.swift */; };
+		2486656C2C1094760035A1B2 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2486656B2C1094760035A1B2 /* Enums.swift */; };
+		2486656F2C109F4B0035A1B2 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 2486656E2C109F4B0035A1B2 /* SDWebImageSwiftUI */; };
+		24E680622C0ED17700EF885A /* BackgroundBlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E680612C0ED17700EF885A /* BackgroundBlurView.swift */; };
+		24E680642C0EE21900EF885A /* ThingYouWantAddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E680632C0EE21900EF885A /* ThingYouWantAddView.swift */; };
+		24E680682C0EF3A200EF885A /* AppNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E680652C0EF3A200EF885A /* AppNavigationView.swift */; };
+		24E680692C0EF3A200EF885A /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E680662C0EF3A200EF885A /* Router.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -81,6 +111,27 @@
 		244AAEEA2C0DF51800D14DC8 /* QATitltSubtitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QATitltSubtitle.swift; sourceTree = "<group>"; };
 		244AAEEC2C0DF74300D14DC8 /* AppSearchField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSearchField.swift; sourceTree = "<group>"; };
 		244AAEEF2C0DFC9000D14DC8 /* CongratulationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CongratulationView.swift; sourceTree = "<group>"; };
+		247A385A2C118E6B00EC7F9C /* ReasonGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReasonGridView.swift; sourceTree = "<group>"; };
+		247A385C2C118FE000EC7F9C /* MDLReason.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MDLReason.swift; sourceTree = "<group>"; };
+		247A385E2C11C11200EC7F9C /* MDLEmotionDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MDLEmotionDetail.swift; sourceTree = "<group>"; };
+		247A38632C11CDDD00EC7F9C /* ToastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastView.swift; sourceTree = "<group>"; };
+		247A38652C11CF4500EC7F9C /* ToastModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastModifier.swift; sourceTree = "<group>"; };
+		248665062C1022C90035A1B2 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		248665492C1030000035A1B2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		2486654B2C1030300035A1B2 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		248665522C1033A80035A1B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		248665552C105E9D0035A1B2 /* MDLUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MDLUser.swift; sourceTree = "<group>"; };
+		248665582C10639A0035A1B2 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		2486655A2C1064160035A1B2 /* UserDefaults+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Extension.swift"; sourceTree = "<group>"; };
+		248665602C10653E0035A1B2 /* AppPrint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppPrint.swift; sourceTree = "<group>"; };
+		248665652C107BB80035A1B2 /* GeminiHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeminiHelper.swift; sourceTree = "<group>"; };
+		248665672C1093200035A1B2 /* MDLMood.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MDLMood.swift; sourceTree = "<group>"; };
+		248665692C1094090035A1B2 /* EmotionQAViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmotionQAViewModel.swift; sourceTree = "<group>"; };
+		2486656B2C1094760035A1B2 /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
+		24E680612C0ED17700EF885A /* BackgroundBlurView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundBlurView.swift; sourceTree = "<group>"; };
+		24E680632C0EE21900EF885A /* ThingYouWantAddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThingYouWantAddView.swift; sourceTree = "<group>"; };
+		24E680652C0EF3A200EF885A /* AppNavigationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppNavigationView.swift; sourceTree = "<group>"; };
+		24E680662C0EF3A200EF885A /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +139,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2486656F2C109F4B0035A1B2 /* SDWebImageSwiftUI in Frameworks */,
+				248665402C1026AC0035A1B2 /* FirebaseAnalyticsSwift in Frameworks */,
+				248665442C1026AC0035A1B2 /* FirebaseFirestore in Frameworks */,
+				248665422C1026AC0035A1B2 /* FirebaseAuth in Frameworks */,
+				248665512C1033830035A1B2 /* GoogleSignInSwift in Frameworks */,
+				248665462C1026AC0035A1B2 /* FirebaseFirestoreCombine-Community in Frameworks */,
+				2486653E2C1026AC0035A1B2 /* FirebaseAnalytics in Frameworks */,
+				248665642C107B800035A1B2 /* GoogleGenerativeAI in Frameworks */,
+				248665482C1026AC0035A1B2 /* FirebaseFirestoreSwift in Frameworks */,
+				2486654F2C1033830035A1B2 /* GoogleSignIn in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,6 +160,7 @@
 			children = (
 				244AAE832C0D8AA000D14DC8 /* MoodTrackingSwiftUI */,
 				244AAE822C0D8AA000D14DC8 /* Products */,
+				2486650B2C1025B30035A1B2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -114,11 +176,14 @@
 			isa = PBXGroup;
 			children = (
 				244AAE842C0D8AA000D14DC8 /* MoodTrackingSwiftUIApp.swift */,
-				244AAE972C0D906200D14DC8 /* Master */,
 				244AAE932C0D8D4800D14DC8 /* Components */,
+				248665542C105E910035A1B2 /* Model */,
 				244AAEDD2C0DCC8300D14DC8 /* ViewModel */,
 				244AAE922C0D8D2000D14DC8 /* View */,
-				244AAE882C0D8AA100D14DC8 /* Assets.xcassets */,
+				248665572C1063910035A1B2 /* Helper */,
+				24E680672C0EF3A200EF885A /* Navigation */,
+				244AAE972C0D906200D14DC8 /* Master */,
+				248665532C1036A40035A1B2 /* Resources */,
 				244AAE8A2C0D8AA100D14DC8 /* Preview Content */,
 			);
 			path = MoodTrackingSwiftUI;
@@ -135,6 +200,7 @@
 		244AAE922C0D8D2000D14DC8 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				248665052C1022B00035A1B2 /* Login */,
 				244AAEEE2C0DFC6500D14DC8 /* Congratulation */,
 				244AAEDE2C0DD08B00D14DC8 /* EmotionQA */,
 				244AAECA2C0D93DE00D14DC8 /* Home */,
@@ -145,19 +211,12 @@
 		244AAE932C0D8D4800D14DC8 /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				244AAE942C0D8D5B00D14DC8 /* ViewModifiers */,
-				244AAEE82C0DF32B00D14DC8 /* AppButton.swift */,
-				244AAEEC2C0DF74300D14DC8 /* AppSearchField.swift */,
+				247A38602C11CDA700EC7F9C /* Toast */,
+				24E680612C0ED17700EF885A /* BackgroundBlurView.swift */,
+				244AAE952C0D8D6D00D14DC8 /* GradientBackground.swift */,
+				244AAEF12C0E043700D14DC8 /* CommonView */,
 			);
 			path = Components;
-			sourceTree = "<group>";
-		};
-		244AAE942C0D8D5B00D14DC8 /* ViewModifiers */ = {
-			isa = PBXGroup;
-			children = (
-				244AAE952C0D8D6D00D14DC8 /* GradientBackground.swift */,
-			);
-			path = ViewModifiers;
 			sourceTree = "<group>";
 		};
 		244AAE972C0D906200D14DC8 /* Master */ = {
@@ -174,6 +233,7 @@
 				244AAED82C0DCAAF00D14DC8 /* Date */,
 				244AAEC82C0D90CC00D14DC8 /* UIDevice */,
 				244AAEB62C0D908200D14DC8 /* Foundation */,
+				2486655F2C1064460035A1B2 /* UserDefaults */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -336,6 +396,8 @@
 			isa = PBXGroup;
 			children = (
 				244AAEDB2C0DCC7700D14DC8 /* HomeViewModel.swift */,
+				2486654B2C1030300035A1B2 /* LoginViewModel.swift */,
+				248665692C1094090035A1B2 /* EmotionQAViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -346,7 +408,7 @@
 				244AAEE12C0DDD2100D14DC8 /* Components */,
 				244AAEDF2C0DD0FD00D14DC8 /* EmotionSelectionView.swift */,
 				244AAEE62C0DF00900D14DC8 /* WhatMadeFeelView.swift */,
-				244AAEEA2C0DF51800D14DC8 /* QATitltSubtitle.swift */,
+				24E680632C0EE21900EF885A /* ThingYouWantAddView.swift */,
 			);
 			path = EmotionQA;
 			sourceTree = "<group>";
@@ -354,8 +416,10 @@
 		244AAEE12C0DDD2100D14DC8 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				244AAEEA2C0DF51800D14DC8 /* QATitltSubtitle.swift */,
 				244AAEE22C0DDD3100D14DC8 /* QAHeaderView.swift */,
 				244AAEE42C0DEB9200D14DC8 /* EmotionsGridView.swift */,
+				247A385A2C118E6B00EC7F9C /* ReasonGridView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -366,6 +430,88 @@
 				244AAEEF2C0DFC9000D14DC8 /* CongratulationView.swift */,
 			);
 			path = Congratulation;
+			sourceTree = "<group>";
+		};
+		244AAEF12C0E043700D14DC8 /* CommonView */ = {
+			isa = PBXGroup;
+			children = (
+				244AAEE82C0DF32B00D14DC8 /* AppButton.swift */,
+				244AAEEC2C0DF74300D14DC8 /* AppSearchField.swift */,
+			);
+			path = CommonView;
+			sourceTree = "<group>";
+		};
+		247A38602C11CDA700EC7F9C /* Toast */ = {
+			isa = PBXGroup;
+			children = (
+				247A38632C11CDDD00EC7F9C /* ToastView.swift */,
+				247A38652C11CF4500EC7F9C /* ToastModifier.swift */,
+			);
+			path = Toast;
+			sourceTree = "<group>";
+		};
+		248665052C1022B00035A1B2 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				248665062C1022C90035A1B2 /* LoginView.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		2486650B2C1025B30035A1B2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		248665532C1036A40035A1B2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				248665522C1033A80035A1B2 /* Info.plist */,
+				248665492C1030000035A1B2 /* GoogleService-Info.plist */,
+				244AAE882C0D8AA100D14DC8 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		248665542C105E910035A1B2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				248665552C105E9D0035A1B2 /* MDLUser.swift */,
+				248665672C1093200035A1B2 /* MDLMood.swift */,
+				247A385C2C118FE000EC7F9C /* MDLReason.swift */,
+				247A385E2C11C11200EC7F9C /* MDLEmotionDetail.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		248665572C1063910035A1B2 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				248665602C10653E0035A1B2 /* AppPrint.swift */,
+				248665582C10639A0035A1B2 /* Constant.swift */,
+				248665652C107BB80035A1B2 /* GeminiHelper.swift */,
+				2486656B2C1094760035A1B2 /* Enums.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		2486655F2C1064460035A1B2 /* UserDefaults */ = {
+			isa = PBXGroup;
+			children = (
+				2486655A2C1064160035A1B2 /* UserDefaults+Extension.swift */,
+			);
+			path = UserDefaults;
+			sourceTree = "<group>";
+		};
+		24E680672C0EF3A200EF885A /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				24E680652C0EF3A200EF885A /* AppNavigationView.swift */,
+				24E680662C0EF3A200EF885A /* Router.swift */,
+			);
+			path = Navigation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -384,6 +530,18 @@
 			dependencies = (
 			);
 			name = MoodTrackingSwiftUI;
+			packageProductDependencies = (
+				2486653D2C1026AC0035A1B2 /* FirebaseAnalytics */,
+				2486653F2C1026AC0035A1B2 /* FirebaseAnalyticsSwift */,
+				248665412C1026AC0035A1B2 /* FirebaseAuth */,
+				248665432C1026AC0035A1B2 /* FirebaseFirestore */,
+				248665452C1026AC0035A1B2 /* FirebaseFirestoreCombine-Community */,
+				248665472C1026AC0035A1B2 /* FirebaseFirestoreSwift */,
+				2486654E2C1033830035A1B2 /* GoogleSignIn */,
+				248665502C1033830035A1B2 /* GoogleSignInSwift */,
+				248665632C107B800035A1B2 /* GoogleGenerativeAI */,
+				2486656E2C109F4B0035A1B2 /* SDWebImageSwiftUI */,
+			);
 			productName = MoodTrackingSwiftUI;
 			productReference = 244AAE812C0D8AA000D14DC8 /* MoodTrackingSwiftUI.app */;
 			productType = "com.apple.product-type.application";
@@ -412,6 +570,12 @@
 				Base,
 			);
 			mainGroup = 244AAE782C0D8AA000D14DC8;
+			packageReferences = (
+				2486653C2C1026AC0035A1B2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				2486654D2C1033830035A1B2 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+				248665622C107B800035A1B2 /* XCRemoteSwiftPackageReference "generative-ai-swift" */,
+				2486656D2C109F4B0035A1B2 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+			);
 			productRefGroup = 244AAE822C0D8AA000D14DC8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -427,6 +591,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				244AAE8C2C0D8AA100D14DC8 /* Preview Assets.xcassets in Resources */,
+				2486654A2C1030000035A1B2 /* GoogleService-Info.plist in Resources */,
 				244AAE892C0D8AA100D14DC8 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -438,35 +603,54 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24E680682C0EF3A200EF885A /* AppNavigationView.swift in Sources */,
 				244AAEB82C0D908200D14DC8 /* Extension+Stack.swift in Sources */,
 				244AAEBA2C0D908200D14DC8 /* Data+Extension.swift in Sources */,
 				244AAEC42C0D908200D14DC8 /* Optional+Extension.swift in Sources */,
 				244AAEDC2C0DCC7700D14DC8 /* HomeViewModel.swift in Sources */,
 				244AAEF02C0DFC9000D14DC8 /* CongratulationView.swift in Sources */,
+				248665662C107BB80035A1B2 /* GeminiHelper.swift in Sources */,
 				244AAEB92C0D908200D14DC8 /* Collection+Extension.swift in Sources */,
 				244AAED12C0DA15A00D14DC8 /* ChatView.swift in Sources */,
+				2486654C2C1030300035A1B2 /* LoginViewModel.swift in Sources */,
+				24E680692C0EF3A200EF885A /* Router.swift in Sources */,
 				244AAEBE2C0D908200D14DC8 /* ExtensionDictionary.swift in Sources */,
+				2486656A2C1094090035A1B2 /* EmotionQAViewModel.swift in Sources */,
 				244AAEDA2C0DCAB000D14DC8 /* ExtensionDateFormatter.swift in Sources */,
+				24E680622C0ED17700EF885A /* BackgroundBlurView.swift in Sources */,
 				244AAED92C0DCAB000D14DC8 /* Date+Extension.swift in Sources */,
 				244AAEE92C0DF32B00D14DC8 /* AppButton.swift in Sources */,
 				244AAEED2C0DF74300D14DC8 /* AppSearchField.swift in Sources */,
 				244AAEC02C0D908200D14DC8 /* Encodable+Extension.swift in Sources */,
+				247A38642C11CDDD00EC7F9C /* ToastView.swift in Sources */,
+				248665072C1022C90035A1B2 /* LoginView.swift in Sources */,
+				2486656C2C1094760035A1B2 /* Enums.swift in Sources */,
 				244AAE872C0D8AA000D14DC8 /* HomeView.swift in Sources */,
 				244AAEC92C0D90CC00D14DC8 /* Device+Extension.swift in Sources */,
+				248665562C105E9D0035A1B2 /* MDLUser.swift in Sources */,
+				247A385D2C118FE000EC7F9C /* MDLReason.swift in Sources */,
+				247A385B2C118E6B00EC7F9C /* ReasonGridView.swift in Sources */,
 				244AAEE72C0DF00900D14DC8 /* WhatMadeFeelView.swift in Sources */,
 				244AAEBF2C0D908200D14DC8 /* ExetensionDouble.swift in Sources */,
+				248665612C10653E0035A1B2 /* AppPrint.swift in Sources */,
+				247A38662C11CF4500EC7F9C /* ToastModifier.swift in Sources */,
 				244AAEC32C0D908200D14DC8 /* ConvertToNumeric.swift in Sources */,
 				244AAEC52C0D908200D14DC8 /* String+Extension.swift in Sources */,
 				244AAEC62C0D908200D14DC8 /* URL+Extension.swift in Sources */,
 				244AAEC22C0D908200D14DC8 /* ExtensionInt.swift in Sources */,
+				248665682C1093200035A1B2 /* MDLMood.swift in Sources */,
+				247A385F2C11C11200EC7F9C /* MDLEmotionDetail.swift in Sources */,
 				244AAECF2C0D9B7100D14DC8 /* DateSelectionView.swift in Sources */,
 				244AAE852C0D8AA000D14DC8 /* MoodTrackingSwiftUIApp.swift in Sources */,
 				244AAEE52C0DEB9200D14DC8 /* EmotionsGridView.swift in Sources */,
 				244AAEE02C0DD0FD00D14DC8 /* EmotionSelectionView.swift in Sources */,
+				248665592C10639A0035A1B2 /* Constant.swift in Sources */,
+				2486655B2C1064160035A1B2 /* UserDefaults+Extension.swift in Sources */,
 				244AAE962C0D8D6D00D14DC8 /* GradientBackground.swift in Sources */,
 				244AAEB72C0D908200D14DC8 /* Array+Extension.swift in Sources */,
 				244AAED52C0DC9A400D14DC8 /* MoodDetailCardView.swift in Sources */,
 				244AAEEB2C0DF51800D14DC8 /* QATitltSubtitle.swift in Sources */,
+				24E680642C0EE21900EF885A /* ThingYouWantAddView.swift in Sources */,
 				244AAEE32C0DDD3100D14DC8 /* QAHeaderView.swift in Sources */,
 				244AAEC12C0D908200D14DC8 /* ExetensionFloat.swift in Sources */,
 				244AAECD2C0D940000D14DC8 /* HomeHeaderView.swift in Sources */,
@@ -601,12 +785,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MoodTrackingSwiftUI/Preview Content\"";
-				DEVELOPMENT_TEAM = FL7T8233P6;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = FL7T8233P6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MoodTrackingSwiftUI/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -620,6 +807,8 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.multiqos.MoodTrackingSwiftUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = WildcardDevelopement15Dec2023;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -631,12 +820,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MoodTrackingSwiftUI/Preview Content\"";
-				DEVELOPMENT_TEAM = FL7T8233P6;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = FL7T8233P6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MoodTrackingSwiftUI/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -650,6 +842,8 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.multiqos.MoodTrackingSwiftUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = WildcardDevelopement15Dec2023;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -678,6 +872,94 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2486653C2C1026AC0035A1B2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.27.0;
+			};
+		};
+		2486654D2C1033830035A1B2 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.1.0;
+			};
+		};
+		248665622C107B800035A1B2 /* XCRemoteSwiftPackageReference "generative-ai-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/generative-ai-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.5.4;
+			};
+		};
+		2486656D2C109F4B0035A1B2 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2486653D2C1026AC0035A1B2 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2486653C2C1026AC0035A1B2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		2486653F2C1026AC0035A1B2 /* FirebaseAnalyticsSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2486653C2C1026AC0035A1B2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsSwift;
+		};
+		248665412C1026AC0035A1B2 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2486653C2C1026AC0035A1B2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		248665432C1026AC0035A1B2 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2486653C2C1026AC0035A1B2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		248665452C1026AC0035A1B2 /* FirebaseFirestoreCombine-Community */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2486653C2C1026AC0035A1B2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseFirestoreCombine-Community";
+		};
+		248665472C1026AC0035A1B2 /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2486653C2C1026AC0035A1B2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+		2486654E2C1033830035A1B2 /* GoogleSignIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2486654D2C1033830035A1B2 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignIn;
+		};
+		248665502C1033830035A1B2 /* GoogleSignInSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2486654D2C1033830035A1B2 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignInSwift;
+		};
+		248665632C107B800035A1B2 /* GoogleGenerativeAI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 248665622C107B800035A1B2 /* XCRemoteSwiftPackageReference "generative-ai-swift" */;
+			productName = GoogleGenerativeAI;
+		};
+		2486656E2C109F4B0035A1B2 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2486656D2C109F4B0035A1B2 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 244AAE792C0D8AA000D14DC8 /* Project object */;
 }

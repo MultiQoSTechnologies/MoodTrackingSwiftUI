@@ -12,7 +12,7 @@ struct HomeHeaderView: View {
         HStack {
             Text("Hey,")
                 .font(.title2)
-            Text("Alexa")
+            Text("\(Constant.user.name ?? "")")
                 .font(.title)
                 .bold()
             Spacer()

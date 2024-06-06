@@ -27,3 +27,32 @@ extension View {
         modifier(GradientBackground(colors: colors))
     }
 }
+
+
+struct LoaderView: ViewModifier {
+    var isLoading = false
+    
+    init(isLoading: Bool = false) {
+        self.isLoading = isLoading
+    }
+    
+    func body(content: Content) -> some View {
+        content
+            .overlay {
+                if isLoading {
+                    ProgressView()
+                        .padding(20.aspectRatio)
+                        .background(.white)
+                        .clipShape(.rect(cornerRadius: 12.aspectRatio))
+                        .shadow(color: .black.opacity(0.2), radius: 10, x: 0.0, y: 0.0)
+                }
+        }
+    }
+}
+
+extension View {
+    func loader(loading: Bool) -> some View {
+        modifier(LoaderView(isLoading: loading))
+            .disabled(loading)
+    }
+}

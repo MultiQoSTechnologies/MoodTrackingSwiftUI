@@ -11,6 +11,7 @@ struct AppButton: View {
     
     var onTap: () -> ()
     var title: String
+    var enable: Bool = false
     
     var body: some View {
         Button(action: onTap, label: {
@@ -20,12 +21,11 @@ struct AppButton: View {
                 Spacer()
             }
             .frame( height: 50.aspectRatio)
-            .background(.appPurple)
+            .background(enable ? .appPurple : .appPurple.opacity(0.4))
             .clipShape(.capsule)
             .foregroundStyle(.white)
             .bold()
             .padding(.bottom, 1)
-            
         })
     }
 }
