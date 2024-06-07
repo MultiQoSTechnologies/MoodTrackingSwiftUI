@@ -92,6 +92,10 @@ extension Date {
             return String(format: "%02ld:%02ld", self.minute, self.second)
         }
     }
+    var hm: String {
+        /// hh:mm:ss > 12:10:00 or 10:00
+        return String(format: "%2ld:%02ld", self.hour, self.minute)
+    }
     
     //MARK:-
     func convertToTimezone(_ timezone:TimeZone) -> Date {

@@ -8,6 +8,12 @@
 import Foundation
 import UIKit
 
+extension String {
+    func removeAsterisks() -> String {
+        return self.replacingOccurrences(of: "**", with: "")
+    }
+}
+
 // MARK: - Extension of String For Converting it TO Int AND URL.
 extension String {
     

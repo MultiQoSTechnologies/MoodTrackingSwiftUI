@@ -9,12 +9,11 @@ import Combine
 import FirebaseFirestore
 import SwiftUI
 
+@MainActor
 class EmotionQAViewModel: ObservableObject {
     
     private var firestore = Firestore.firestore()
-    
-    @EnvironmentObject private var router: Router
-    
+      
     @Published var arrMood = [MDLMood]()
     @Published var originalArrMood = [MDLMood]()
 
@@ -28,7 +27,17 @@ class EmotionQAViewModel: ObservableObject {
     
     var cancellable = Set<AnyCancellable>()
     
-    func fetchMoods() async {
+    func reset() {
+        arrMood = []
+        originalArrMood = []
+        arrReason = []
+        originalArrReason = []
+        onmind = ""
+        isLoading = false
+        toast = nil
+    }
+    
+    func fetchMoods() async { 
         do {
             isLoading = true
             try await firestore
@@ -92,22 +101,48 @@ class EmotionQAViewModel: ObservableObject {
         var tmpOnmind = onmind
         tmpOnmind += "\n I felt \(selectedMoodNames) because of \(selectedReasonNames)."
         
-        let response = await GeminiHelper.generate(prompt: tmpOnmind)
+        let tipGenerator = await GeminiHelper.generate(prompt: tmpOnmind)
+        
+        var tipText: String = tipGenerator?.text ?? ""
+
+        if tipText.hasSuffix("\n") {
+            tipText.removeLast()
+        }
+        
+        let p = (tipText) + "What could be 1-3 words sentense for this emotion"
+        let p2 = "I felt \(selectedMoodNames) because of \(selectedReasonNames)." + "What could be 1 word for this emotion"
+        
+        let moodHeaderGenerator = await GeminiHelper.generate(prompt: p2)
+        var moodHeaderText = moodHeaderGenerator?.text ?? ""
+        if moodHeaderText.hasSuffix("\n") {
+            moodHeaderText.removeLast()
+        }
+        
+        let tipHeaderGenerator = await GeminiHelper.generate(prompt: p)
+        var tipHeaderText = tipHeaderGenerator?.text ?? ""
+        if tipHeaderText.hasSuffix("\n") {
+            tipHeaderText.removeLast()
+        }
+        
+        let id = UUID().uuidString
          
         let data: [String: Any] = [
             "moods": selectedMoods.map{$0.dictionary},
             "reasons": selectedReasons.map{$0.dictionary},
             "onmind": onmind,
-            "tip": response?.text ?? "",
-            "createdAt": Date().millisecondsSince1970
+            "tip": tipText,
+            "tipHeader": tipHeaderText,
+            "moodHeader": moodHeaderText,
+            "createdAt": Date().millisecondsSince1970,
+            "id": id
         ]
         
         do {
             try await firestore
                 .collection(FICollectionName.emotionData.rawValue)
-                .document(Constant.user.uid!)
+                .document(Constant.user?.uid ?? "")
                 .collection(FICollectionName.emotionDetails.rawValue)
-                .document()
+                .document(id)
                 .setData(data)
             
             isLoading = false

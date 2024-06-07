@@ -10,6 +10,8 @@ import SwiftUI
 struct CongratulationView: View {
      
     @EnvironmentObject private var router: Router
+    @EnvironmentObject private var emotionVM: EmotionQAViewModel
+    
     @State private var showHome = false
     
     var body: some View {
@@ -44,7 +46,8 @@ struct CongratulationView: View {
                 
                 AppButton(
                     onTap: {
-                        router.navigateToRoot() 
+                        emotionVM.reset()
+                        router.navigateToRoot()
                     },
                     title: "Got it",
                     enable: true

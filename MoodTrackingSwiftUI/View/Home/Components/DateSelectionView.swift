@@ -24,15 +24,10 @@ struct DateSelectionView: View {
                                     .font(.subheadline)
                                     .multilineTextAlignment(.center)
                                     .padding(.horizontal, 8.aspectRatio)
-                            }
-                        Image(.faceScreamingFear)
-                            .resizable()
-                            .frame(width: 24.aspectRatio, height: 24.aspectRatio)
+                            } 
                     }
                     .onTapGesture {
-                        withAnimation(.easeInOut(duration: 0.7)) {
-                            homeVM.selectedDate = date
-                        }
+                        homeVM.selectedDate = date
                     }
                 }
             }

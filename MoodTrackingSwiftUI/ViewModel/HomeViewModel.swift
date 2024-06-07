@@ -10,6 +10,7 @@ import FirebaseFirestore
 
 @MainActor
 class HomeViewModel: ObservableObject {
+    
     private var firestore = Firestore.firestore()
     
     @Published var dates: [Date] = []
@@ -20,6 +21,7 @@ class HomeViewModel: ObservableObject {
     
     @Published var isLoading = false
     @Published var toast: Toast?
+    @Published var showAlert = false
     
     var cancellable = Set<AnyCancellable>()
       
@@ -39,11 +41,12 @@ class HomeViewModel: ObservableObject {
     }
     
     func getEmotionDetailsData() async {
+        arrEmotionDetails.removeAll()
         isLoading = true
         do {
             try await firestore
                 .collection(FICollectionName.emotionData.rawValue)
-                .document(Constant.user.uid!)
+                .document(Constant.user?.uid ?? "")
                 .collection(FICollectionName.emotionDetails.rawValue)
                 .getDocuments()
                 .documents
@@ -63,6 +66,7 @@ class HomeViewModel: ObservableObject {
                         return
                     }
                     arrEmotionDetails.append(data)
+                    arrEmotionDetails.sort(by: {$0.createdAt! > $1.createdAt!})
                 }
                 .store(in: &cancellable)
                  
@@ -72,4 +76,46 @@ class HomeViewModel: ObservableObject {
             toast = Toast(message: "Error in getting data: \(e.localizedDescription)")
         }
     }
+    
+    func deleteEmotionDetail(docId: String) async {
+        isLoading = true
+        do {
+            try await firestore
+                .collection(FICollectionName.emotionData.rawValue)
+                .document(Constant.user?.uid ?? "")
+                .collection(FICollectionName.emotionDetails.rawValue)
+                .document(docId)
+                .delete()
+             
+            arrEmotionDetails.removeAll(where: {$0.id == docId})
+            isLoading = false
+            
+        } catch let e {
+            isLoading = false
+            toast = Toast(message: "Error in getting data: \(e.localizedDescription)")
+        }
+    }
+    
+    func toggleExpanded(for item: MDLEmotionDetail) {
+        if let index = arrEmotionDetails.firstIndex(where: { $0 == item }) {
+            item.expanded.toggle()
+            arrEmotionDetails.removeAll(where: {$0 == item})
+            arrEmotionDetails.insert(item, at: index)
+        }
+    }
+    
+    func toggleExpandedTip(for item: MDLEmotionDetail) {
+        if let index = arrEmotionDetails.firstIndex(where: { $0 == item }) {
+            item.expandedTip.toggle()
+            arrEmotionDetails.removeAll(where: {$0 == item})
+            arrEmotionDetails.insert(item, at: index)
+        }
+    }
+    
+    func logout() {
+        Constant.user = nil
+        try? UserDefaults.standard.set(object: Constant.user, forKey: "User")
+    }
+    
+    
 }

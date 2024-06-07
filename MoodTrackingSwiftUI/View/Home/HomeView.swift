@@ -15,8 +15,7 @@ struct HomeView: View {
  
     @State private var expanded = false
     @State private var showQA = false 
-    
-    @State var showAlert = false
+ 
     
     var body: some View {
         ZStack(alignment: .bottomTrailing) {
@@ -24,16 +23,13 @@ struct HomeView: View {
                 VStack {
                     HomeHeaderView()
                     
-                    ScrollView(showsIndicators: false) {
-                        DateSelectionView()
-                        ChartView()
-                            .padding(.top, 30.aspectRatio)
-                            .animation(nil)
-                        
-                        MoodDetailCardView(expanded: $expanded)
-                    }
+                    DateSelectionView() 
+                    
+                    ScrollView {
+                        MoodDetailView()
+                    }.scrollIndicators(.hidden)
                 }
-                Spacer()
+                
                 
             }.padding(.horizontal, 20.aspectRatio)
             
@@ -48,26 +44,37 @@ struct HomeView: View {
                         .clipShape(.rect(cornerRadius: 15.aspectRatio))
                 }
             }.padding()
-        } 
+        }
         .gradientBackground()
         .navigationBarBackButtonHidden()
         .loader(loading: homeVM.isLoading)
         .toast(toast: $homeVM.toast)
-        .alert("Logout", isPresented: $showAlert) {
+        .task {
+            await homeVM.getEmotionDetailsData()
+        }
+        .alert("Logout", isPresented: $homeVM.showAlert) {
             Button {
+                
             } label: {
                 Text("Cancel")
             }
             
             Button {
-                Constant.user = nil
-                try? UserDefaults.standard.set(object: Constant.user, forKey: "User")
+                homeVM.logout()
                 router.navigateToRoot()
             } label: {
                 Text("Logout")
             }
         } message: {
             Text("Are you sure want to logout?")
+        }
+        .overlay(alignment: .center) {
+            if homeVM.arrEmotionDetails.filter({Date(milliseconds: Int64($0.createdAt ?? 0)).toDate(format: "dd/MM/yyyy") == homeVM.selectedDate?.toDate(format: "dd/MM/yyyy")}).count == 0 {
+                Text("No Data Found")
+                    .font(.title)
+                    .fontWeight(.bold)
+                    .foregroundStyle(.white)
+            }
         }
     }
 }

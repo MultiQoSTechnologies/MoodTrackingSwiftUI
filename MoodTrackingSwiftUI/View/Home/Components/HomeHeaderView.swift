@@ -8,31 +8,33 @@
 import SwiftUI
 
 struct HomeHeaderView: View {
+    
+    @EnvironmentObject private var homeVM: HomeViewModel
+    
     var body: some View {
         HStack {
             Text("Hey,")
                 .font(.title2)
-            Text("\(Constant.user.name ?? "")")
+            Text("\(Constant.user?.name ?? "")")
                 .font(.title)
                 .bold()
+            
             Spacer()
             
-            HStack { 
-                Text(Date.now.toDate(format: "E, dd MMMM"))
-                    .font(.caption)
-                Image(.calendar)
-                    .resizable()
-                    .frame(width: 24.aspectRatio, height: 24.aspectRatio)
-                    .foregroundStyle(.appPurple)
-            }
-            .padding(.horizontal, 15.aspectRatio)
-            .padding(.vertical, 10.aspectRatio)
-            .background {
-                Capsule()
-                    .fill(.white)
-            }
-        }
-        
+            Button(action: {
+                homeVM.showAlert.toggle()
+            }, label: {
+                HStack {
+                    Image(systemName: "rectangle.portrait.and.arrow.right.fill")
+                        .foregroundStyle(.appPurple)
+                }
+                .padding(10.aspectRatio)
+                .background {
+                    Circle()
+                        .fill(.white)
+                }
+            })
+        } 
     }
 }
 

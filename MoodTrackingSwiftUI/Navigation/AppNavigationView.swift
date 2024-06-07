@@ -56,6 +56,7 @@ struct AppNavigationView: View {
                         .environmentObject(emotionqaVM)
                 case .congratulate:
                     CongratulationView()
+                        .environmentObject(emotionqaVM)
                 }
             }
         }
