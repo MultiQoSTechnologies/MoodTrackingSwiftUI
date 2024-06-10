@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "face_steam_from_nose.svg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

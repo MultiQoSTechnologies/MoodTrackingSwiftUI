@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "nauseated_face.svg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
