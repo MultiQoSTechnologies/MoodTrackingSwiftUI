@@ -46,4 +46,12 @@
    
 **Run the Project:**
  - Open the project in XCode.
- - Build and run the project on your simulator or physical device. 
+ - Build and run the project on your simulator or physical device.
+
+**Let Us Know:**
+
+For more details, visit [MultiQoS.](https://multiqos.com/flutter-app-development/)
+
+Contact us for collaboration or support:
+
+Email: biz@multiqos.com
